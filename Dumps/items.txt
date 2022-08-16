@@ -1,0 +1,906 @@
+=== Items ===
+0: Basic Axe
+1: Copper Boomarang
+2: Bug Net
+3: Chainsaw
+4: Fishing Rod
+5: Shovel of Dirt
+6: Shovel
+7: Hoe
+8: Basic Pickaxe
+9: Torch
+10: Basic Watering Can
+11: Wooden Bat
+12: Bag of Cement
+13: BBQ
+14: Bone
+15: Brick Path
+16: Stone Steps
+17: Bush Lime
+18: Camp Fire
+19: Cooked Meat
+20: Funnel Web Spider
+21: Raw Meat
+22: Nails
+23: Shiny Stone
+24: ???
+25: Garden Light
+26: Stone
+27: Stone Grinder
+28: Sugar Cane
+29: Ulysses Butterfly
+30: Wooden Crate
+31: Windmill Plan
+32: Palm Wood Fence
+33: Gum Log
+34: Wooden Torch
+35: Crafting Lab Deed
+36: Your House Deed
+37: Post Office Deed
+38: PowerLine
+39: Shop Deed
+40: Aussie Hat
+41: Black Boots
+42: Blue Jeans
+43: Tradie Boots
+44: Tradie Pants
+45: Dark Shorts
+46: Purple Shirt
+47: Red Flanney
+48: Barcoo Grunter
+49: Barramundi
+50: River Bass
+51: Cooked Fish
+52: Jungle Perch
+53: Purple Armchair
+54: Wooden Double Bed
+55: Coffee Table
+56: Wooden Chair
+57: Wooden Couch
+58: Small Round Table
+59: Dark Wood Cabinet
+60: Sugar Cane Seeds
+61: Dog Hat
+62: Holiday Hat
+63: Blue Beanie
+64: Top Hat
+65: Red Baseball Cap
+66: Yellow Bucket Hat
+67: Welcome Sign
+68: Business Pants
+69: Business Shirt
+70: Business Shoes
+71: Green Pants
+72: Green Sweater
+73: Green Shoes
+74: Holiday Shirt
+75: Thongs
+76: Holiday Shorts
+77: Tradie Shirt
+78: Kahkey Boots
+79: Kahkey Shorts
+80: Kahkey Shirt
+81: Clothing Shop Deed
+82: Blue Shorts
+83: Blue and Yellow Shirt
+84: Red Sneakers
+85: Blue Dress
+86: Fairest Dress
+87: White Flats
+88: Mustard Coat
+89: White Sneakers
+90: Ripped Jeans
+91: White Dress
+87: White Flats
+93: Red Dress
+94: Red Flats
+95: Pin Stripe Jacket
+96: Pin Stripe Pants
+97: Grass Hopper
+98: Common Blue Tail
+99: Wood Bridge
+100: Fly
+101: Cockroach
+102: Yellow Wattle Flower
+103: Metal Detector
+104: Opal
+105: Copper Ore
+106: Iron Ore
+107: Quartz Crystal
+108: Peacock Spider
+109: Trogid
+110: Street Lamp
+111: Cabbage
+112: Cabbage Seeds
+113: Iron Bar
+114: Copper Bar
+115: Furnace
+116: Carrot
+117: Carrot Seeds
+118: Iron Boomarang
+119: Copper Boomarang
+120: Green Beanie
+121: Red Beanie
+122: Blue Bucket Hat
+123: Corn
+124: Corn Seeds
+125: Plant Shop Deed
+126: Fast Watering Can
+127: Dark Wooden Single Bed
+128: Basic Watering Can
+129: Mine Deed
+130: Miners Helmet
+131: Wooden Chair
+132: Wooden Table
+133: Wooden Bedside Table
+134: Wooden Chest Of Drawers
+135: Wooden Cabinet
+136: Wooden Single Bed
+137: Stylish ArmChair
+138: Stylish Sofa
+139: Dark Wooden Chair
+140: Purple Sofa
+141: A white chair
+142: White Coffee Table
+143: White Dinner Table
+144: Long White Cofee Table
+145: White Sofa
+146: Stylish Bed
+147: Stylish Bedside Table
+148: Stylish Drawers
+149: Stylish Dresser
+150: Furniture Shop Deed
+151: Dainty Bed
+152: Dainty Bedside Table
+153: Dainty Chair
+154: Dainty Coffee Table
+155: Dainty Drawers
+156: Dainty Kitchen Table
+157: Dainty Lamp
+158: Dainty Ottoman
+159: Dainty Sofa
+160: White Arm Chair
+161: White Ottoman
+162: White Bed
+163: White Bed Side Table.
+164: White Chest of Drawers
+165: Fern Vase
+166: Purple Vase
+167: Yellow Wattle Vase
+168: Kitchen Cabinet
+169: Kitchen Oven
+170: Kitchen Sink
+171: Stylish Chair
+172: Stylish Table
+173: Stylish Lamp
+174: Regal ArmChair
+175: Regal Bed
+176: Regal Bedside Table
+177: Regal Chair
+178: Regal Lamp
+179: Regal Sofa
+180: Regal Table
+181: Regal Drawers
+182: Feather
+183: Copper Pickaxe
+184: Iron Pickaxe
+185: Space Helmet
+186: Space Suit Pants
+187: Space Suit Shirt
+188: Space Suit Shoes
+189: Pink Baseball Cap
+190: Black Pants
+191: Black Shirt
+192: Black Sneakers
+193: Daisy Shorts
+194: Pink Dress
+195: Strapped Sandals
+196: Green Baseball Cap
+197: Nautilis Shell
+198: Scallop Shell
+199: Syrinx Shell
+200: Banded Morwong
+201: Bluefish
+202: Garfish
+203: Golden Perch
+204: Mangrove Jack
+205: Luderick
+206: Blue Spot Flathead
+207: Travalla
+208: Yellowfin Tuna
+209: Pirate Coat
+210: Spinifex Tuft
+211: Raft
+212: Spinifex Resin
+213: Palm Wood
+214: Prickly Pear Flesh
+215: Cactus Figs
+216: Copper Axe
+217: Iron Axe
+218: Jump Charm
+219: Swim Charm
+220: Run Charm
+221: White Collar Dress
+222: Dark Blue Button Dress
+223: Crab Pot
+224: Mud Crab
+225: Honey
+226: Bee House
+227: Bee
+228: Queen Bee
+229: Red Back Spider
+230: Desert Scorpion
+231: Stinkbug
+232: Paper Wasp
+233: Birdwing Butterfly
+234: Swallow-tail Butterfly
+235: Harlequin Butterfly
+236: Sling Shot
+237: Yabbie
+238: Pink Shots
+239: Pink Sneakers
+240: Pink T-Shirt
+241: Blue Sneakers
+242: Blue T-Shirt
+243: Purple Dress
+244: Purple Flats
+245: Purple Pants
+246: Crocodile Tooth
+247: Glowing Mushroom
+248: Firefly
+249: Field Cricket
+250: Cement Path
+251: Brick Fence
+252: Ute
+253: Green Boots
+254: Brown Pants
+255: Blue Flanney Shirt
+256: Black Pants
+257: Green Jacket
+258: Maroon Pants
+259: Adventure Hood
+260: Red Strapped Shoes
+261: Overall Dress
+262: Stripped Tights
+263: Chef Hat
+264: Cements Steps
+265: Water Tank Plan
+266: Chef Jacket
+267: Chef Pants
+268: Orange Shorts
+269: Orange T-Shirt
+270: Brown Sandals
+271: Hedge
+272: Roo Poo
+273: Wooden Lamp Post
+274: Palm Wood Gate
+275: Fertilizer
+276: Wood Bridge Rail
+277: Bomb
+278: Sprinkler
+279: Aviator Sun Glasses
+280: Eye Patch
+281: Fake Mustache
+282: Modern Glasses
+283: Modern Sun Glasses
+284: Monicle
+285: Old School Glasses
+286: Round Glasses
+287: Round Sun Glasses
+288: Small Glasses
+289: Small Sun Glasses
+290: Square Glasses
+291: Square Sun Glasses
+292: Jolly Beard
+293: Jolly Hat
+294: Jolly Pants
+295: Jolly Shirt
+296: Jolly Shoes
+297: Bananas
+298: Termite Nest
+299: Dink
+300: Apple
+301: Hard Wood Log
+302: Animal Trap
+303: Scythe
+304: Table Saw
+305: Wood Plank
+306: Palm Wood Plank
+307: Hard Wood Plank
+308: Raw Drumstick
+309: Pearl
+310: Cooked Drumstick
+311: Magic Shovel
+312: Magic Shovel of Dirt
+313: Grass Seed
+314: Palm Wood Path
+315: Wooden Steps
+316: Gum Nut
+317: Pine Cone
+318: Palm Tree Seed
+319: Sleeping Bag
+320: Kale
+321: Kale Seeds
+322: Potato
+323: Potato Seeds
+324: Wheat
+325: Wheat Seeds
+326: Watermelon Seeds
+327: Watermelon
+328: Pumpkin
+329: Pumpkin Seeds
+330: Onion
+331: Onion Seeds
+332: Visiting Site Deed
+333: Carp
+334: Eyestripe Surgeon Fish
+335: Black & White Snapper
+336: Boofhead Catfish
+337: Murray Cod
+338: Eel Tailed Catfish
+339: Stingray
+340: MotorBike
+341: Bird Coop
+342: Animal Shop Deed
+343: Animal Feeder
+344: Animal Food
+345: Chicken Egg
+346: Rock Path
+347: Animal Stall
+348: Vombat Wistle
+349: Milking Bucket
+350: Milk
+351: Wooden Flower Bed
+352: Hedge Arch
+353: Diving Knife
+354: Pink Bow Hat
+355: Sun Hat
+356: Gangsta Hat
+357: Emu Mount
+358: Brick Fountain
+359: Cooking Table
+360: Lamington
+361: Fish and Chips
+362: Fruit Salad
+363: Garden Salad
+364: Hearty Stew
+365: Desert Rose Pot
+366: Fruit Bowl
+367: Alarm Clock
+368: Regal Clock
+369: Red Lava Lamp
+370: Roo Plush
+371: Basic Wooden Floor
+372: Basic Wooden Wall
+373: Dainty Floor
+374: Regal Rug
+375: Dainty Wall
+376: Checkered Floor
+377: Basic White Wall
+378: Light Blue Wall
+379: Checkered Wall
+380: Museum Deed
+381: Chequer Vest
+382: Old Key
+383: Quarry
+384: Old Gear
+385: Yellow Hang Glider
+386: Candle hat
+387: Basic Spear
+388: Chicken Whistle
+389: Basic Hammer
+390: Toad Skin
+391: Bulletin Board Deed
+392: Keg
+393: Wattle Brew
+394: Camera
+395: Animal Collection Point
+396: Desert Rose
+397: Billy Button
+398: Royal Bluebell
+399: Desert Pea
+400: Common Heath
+401: Town Hall
+402: Animal Shears
+403: Wool
+404: Animal Den
+405: Blueprint
+406: Pink Polka Dot Pants
+407: Pink Polka Dot Shirt
+408: Pink Polka dot Shoes
+409: Pink Polka Dot Dress
+410: Orange Dino Shirt
+411: Skull Shirt
+412: Feather Shirt
+413: Black Baseball Cap
+414: White Baseball Cap
+415: Grey Sweat Pants
+416: Brown Sand Shoes
+417: Camo Cap
+418: Camo Dress
+419: Camo Pants
+420: Camo Shirt
+421: Camo Boots
+422: Cargo Pants
+423: Blue Stripe Shirt.
+424: Green Sand Shoes
+425: Orange Cargo Pants
+426: Orange Sand Shoes
+427: Orange Stripe Shirt.
+428: Straw Sun Hat
+429: Red Puffy Jacket
+430: Blue Puffy Jacket
+431: Green Puffy Jacket
+432: Purple Puffy Jacket
+433: Blue Ugly Sweater
+434: Blue Cuffed Pants
+435: Green Cuffed Pants
+436: Purple Cuffed Pants
+437: Red Cuffed Pants
+438: Pink Singlet
+439: Red Singlet
+440: Red Shorts
+441: Black Singlet
+442: Black Shorts
+443: Swimming Goggles
+444: Punk Goggles
+445: Yellow Gum Boots
+446: Rain Coat
+447: Rain Hat
+448: Blue Stripe dress
+449: Orange Stripe dress
+450: Gacha Machine
+451: Basic Bench
+452: Scarecrow
+453: Brick Flower Bed
+454: Recycling Bin
+455: Small Rock
+456: Tin Ore
+457: Crude Axe
+458: Crude Furnace
+459: Tent
+460: Tin Bar
+461: Flagpole
+462: Base Tent
+463: Picket Fence
+464: Picket Gate
+465: Skull Mask
+466: Tin Sheet
+467: Dog Kennel
+468: Dog Whistle
+469: Green Pattern Wall
+470: Blue Pattern Wall
+471: Red Pattern Wall
+472: Pink Pattern Wall
+473: Dark Wooden Wall
+474: Dark Wooden Floor
+475: Pink Carpet
+476: Basic Blue Wallpaper
+477: Basic Green Wallpaper
+478: Basic Pink Wallpaper
+479: Basic Red Wall
+480: Bank Deed
+481: Crafting Table
+482: Tiki Torch
+483: Crude Fence
+484: Bonytongue
+485: Green Flat Cap
+486: Pirate Pants
+487: Pirate Boots
+488: Pirate Hat
+489: Ninja Hood
+490: Ninja Boots
+491: Ninja Pants
+492: Ninja Shirt
+493: Yellow Polka Dot Dress
+494: Yellow Plaid Dress
+495: Blue Plaid Dress
+496: Brown Overall Dress
+497: Green Overall Dress
+498: Green Cardigan Dress
+499: Pink Cardigan Dress
+500: Green Bow Hat
+501: Old Straw Hat
+502: Donation Box
+503: Weather Station
+504: Green Flannelette Shirt
+505: Green Plaid Pants
+506: Blue Plaid Pants
+507: Orange Flanney Shirt
+508: Orange Plaid Pants
+509: Red Plaid Pants
+510: Orange Flat Cap
+511: Red Flat Cap
+512: Blue Flat Cap
+513: Blue Flanney Dress
+514: Green Flannelette Dress
+515: Orange Flanney Dress
+516: Red Flanney Dress
+517: Guitar
+518: House Deed
+519: House Deed
+520: House Deed
+521: House Deed
+522: Eastern Chair
+523: Eastern Seat
+524: Eastern Bed
+525: Eastern Bedside Table
+526: Eastern Bookshelf
+527: Eastern Wardrobe
+528: Eastern Coffee Table
+529: Eastern Couch
+530: Eastern Table
+531: Eastern Lamp
+532: Eastern Floor
+533: Eastern Wall
+534: Red Wood Floor
+535: Small Stack of Books
+536: Wombie Bank
+537: Billy Button Pot
+538: Royal Bluebell Pot
+539: Rattan Bed
+540: Rattan Bookshelf
+541: Rattan Cabinet
+542: Rattan Chair
+543: Rattan Coffee Table
+544: Rattan Couch
+545: Rattan Table
+546: Rattan Floor
+547: Rattan Lamp
+548: Rattan Seat
+549: Rattan Bedside Table
+550: Rattan Wall
+551: Nordic Bed
+552: Nordic Bedside Table
+553: Nordic Bookshelf
+554: Nordic Cabinet
+555: Nordic Chair
+556: Nordic Coffee Table
+557: Nordic Couch
+558: Nordic Table
+559: Nordic Floor
+560: Nordic Lamp
+561: Nordic Seat
+562: Nordic Wall
+563: Pink Bed
+564: Pink Bedside Table
+565: Pink Bookshelf
+566: Pink Cabinet
+567: Pink Chair
+568: Pink Coffee Table
+569: Pink Couch
+570: Pink Table
+571: Pink Lamp
+572: Pink Seat
+573: Cube Floor
+574: Cube Wall
+575: Cooked Apple
+576: Cooked Banana
+577: Cooked Bush Lime
+578: Palm Wood Bridge
+579: Meadow Katydid
+580: Rhinoceros Beetle
+581: Goliath stick
+582: Bogong Moth
+583: Scarlet Jezebel Butterfly
+584: Raw Giant Drumstick
+585: Hot Cylinder
+586: Green Board
+587: Old Wheel
+588: Shiny Disc
+589: North Teletower
+590: East Teletower
+591: South Teletower
+592: West Teletower
+593: Copper Spear
+594: Iron Spear
+595: Copper Hammer
+596: Iron Hammer
+597: Island Map
+598: Adventurer's Journal
+599: Jack Hammer
+600: Jet Ski
+601: Glass Bulb
+602: Smooth Slate
+603: Big Chicken Egg
+604: Rowboat
+605: Blackfish
+606: Galaxias
+607: Silver Perch
+608: Anchovy
+609: Goat Fish
+610: Barracuda
+611: Blob Fish
+612: Saratoga
+613: Tarpon
+614: Black Cricket
+615: Monarch Butterfly
+616: Lacewing
+617: Emperor DragonFly
+618: Pygmyfly
+619: Tau Emerald Dragonfly
+620: Ladybird
+621: Tiger Moth
+622: Duskhawker DragonFly
+623: Largidae
+624: Huntsman
+625: Blue Moon Butterfly
+626: Fiddler Beetle
+627: Stag Beetle
+628: Marlin
+629: Grayling
+630: Hercules Moth
+631: Centipede
+632: Short Finned Eel
+633: Spinning Wheel
+634: Cloth
+635: Cheese Maker
+636: Cheese
+637: High Quality Milk
+638: High Quality Cheese
+639: Old Spring
+640: Sliding Handle
+641: Button Board
+642: Bright Wire
+643: Old Toy
+644: Ear Hats
+645: Old Contraption
+646: Cooked Giant Drumstick
+647: Cooked Croco Meat
+648: Croco Meat
+649: Mangrove Stick
+650: Bottle Tree Wood
+651: Red Hooded Cap
+652: Pilot Goggles
+653: Googly Eyes
+654: Hero Mask
+655: Bunny Hood
+656: Yellow Sweats
+657: Yellow Sneakers
+658: Yellow B Shirt
+659: Mine Pass
+660: Fern Seed
+661: Bush Seed
+662: Base Tent Deed
+663: Visiting Site Deed
+664: Flame Sac
+665: Basic Green Rug
+666: Basic Red Rug
+667: Bank Wall
+668: Grass Floor
+669: Cooked Cactus Fig
+670: Wooden Sign
+671: Cloud Wall
+672: Retro Flower Wall
+673: Retro Floor
+674: Basic Blue Rug
+675: Basic Pink Rug
+676: Basic Purple Rug
+677: Basic Orange Rug
+678: Marble Floor
+679: Bug Book
+680: Fish Book
+681: Plant Book
+682: Compactor
+683: Jackaroo Mask
+684: Helicopter
+685: Meat Pie
+686: Pavlova
+687: Dagwood Dog
+688: Croc Teeth Bat
+689: Flaming Bat
+690: Quiche
+691: Meat on a stick.
+692: Water Tank
+693: Silo
+694: Blackwood Seed
+695: Fake Beard
+696: Cement Fence
+697: Simple Animal Trap
+698: Bottle Brush
+699: Copper Watering Can
+700: Copper Watering Can
+701: Iron Watering Can
+702: Iron Watering Can
+703: Compost Bin
+704: Shovel of Sand
+705: Shovel of Mud
+706: Shovel of Red Sand
+707: Fir Grass Seeds
+708: Tropical Grass Seeds
+709: Long Shoes
+710: Tele Pad
+711: Tele Caller
+712: Black Jacket
+713: Black Jeans
+714: White Pants
+715: White T-Shirt
+716: Black Flat Cap
+717: Black Flanney Shirt
+718: Black Plaid Pants
+719: Yellow Shorts
+720: Yellow T Shirt
+721: Yellow Boots
+722: White Boots
+723: Face Bandana Green
+724: Face Bandana Black
+725: Face Bandana Blue
+726: Face Bandana Orange
+727: Face Bandana Red
+728: Large Round Glasses
+729: Retro Point Glasses
+730: Retro Point Sun Glasses
+731: Triangle Glasses
+732: Shutter Shades
+733: Round Horned Glasses
+734: Round Horned Sun Glasses
+735: Yellow Dress
+736: Rainbow Dress
+737: Black Plaid Dress
+738: Rainbow T Shirt
+739: Rainbow Pants
+740: Rainbow Sneakers
+741: Red Nose
+742: Beak
+743: Black Coat
+744: Black Ripped Jeans
+745: House Move Deed
+746: Jelly
+747: Jelly Brew
+748: Bottled Brush
+749: Advanced Sprinkler
+750: Vombat Poo
+751: White Mask
+752: Black Mask
+753: Windmill
+754: Flower Pot
+755: Gum Wood Path
+756: Hard Wood Path
+757: Hard Wood Bridge
+758: Gum Wood Bridge
+759: Brick Bridge
+760: Gum Wood Fence
+761: Hard Wood Fence
+762: Tin Fence
+763: Big Fried Egg
+764: Fried Egg
+765: Gum Wood Gate
+766: Hard Wood Gate
+767: Tin Gate
+768: Copper Hoe
+769: Brick Well
+770: Quandong
+771: Cooked Quandong
+772: Flake
+773: Cooked Flake
+774: Wheelbarrow
+775: Iron Path
+776: Bottle Brush Seed
+777: Wattle Seed
+778: Copper Fishing Rod
+779: Iron Fishing Rod
+780: Chicken Hood
+781: Wizard Hat
+782: Wizard Robe
+783: Witch Hat
+784: Witch Robe
+785: Green Chair
+786: Green Seat
+787: Green Bed
+788: Green Bedside Table
+789: Green Bookshelf
+790: Green Cabinet
+791: Green Couch
+792: Green Coffee Table
+793: Green Table
+794: Green Lamp
+795: Town Hall Base Tent Upgrade
+796: Town Hall Deed
+797: Storage Barrel
+798: Lawn Mower
+799: Coconut
+800: Boogie Board
+801: Tractor
+802: Blue Paint
+803: Paint Remover
+804: Black Paint
+805: Green Paint
+806: Orange Paint
+807: Pink Paint
+808: Purple Paint
+809: Red Paint
+810: White Paint
+811: Yellow Paint
+812: Chrome Paint
+813: Gold Paint
+814: Buccinidae Shell
+815: Cassidae Shell
+816: Sand Dollar
+817: Tonnidae Shell
+818: Biscuit Sea Star
+819: Eleven-armed Sea Star
+820: Black Sea Cucumber
+821: Spiny Sea Urchin
+822: Pink Sea Urchin
+823: Purple Sea Urchin
+824: King Prawn
+825: Tiger Prawn
+826: Bay Bug
+827: Fresh Water Mussel
+828: Fresh Water Prawn
+829: Inland Crab
+830: Purple Mottled Crab
+831: Blue Mussel
+832: Cushion Sea Star
+833: White Yabbie
+834: Blue Sea Slug
+835: Croco Berley Box
+836: Devil Berley Box
+837: Shark Berley Box
+838: Battle Shovel
+839: Bone Bow
+840: Bone Arrow
+841: Gold Pocket Watch
+842: Boom Box
+843: Tomato
+844: Tomato Seeds
+845: Green Bean
+846: Green Bean Seeds
+847: Empty Miners Helmet
+848: Wooden Chest
+849: Doggo Collar
+850: Mu Saddle
+851: Copper Street Lamp
+852: Cooked Prime Meat
+853: Raw Prime Meat
+854: Repair Table
+855: Repair Kit
+856: Charging Station
+857: Old Sign
+858: Iron Hoe
+859: Bat Wing
+860: Grain Mill
+861: Flour
+862: Sugar
+863: Worm Farm
+864: Machine Manual
+865: Warm Nordic Bed
+866: Warm Nordic Bedside Table
+867: Warm Nordic Bookshelf
+868: Warm Nordic Cabinet
+869: Warm Nordic Chair
+870: Warm Nordic Coffee Table
+871: Warm Nordic Couch
+872: Warm Nordic Table
+873: Warm Nordic Lamp
+873: Warm Nordic Lamp
+875: Warm Nordic Seat
+876: Red Hang Glider
+877: Butter Glider
+878: Dark Wooden Table
+879: Dark Wooden Seat
+880: Dark Wooden Couch
+881: Wooden Bedside Table
+882: Tea Pot
+883: Small Pot
+884: Rattan Basket
+885: Palm Wood Bench
+886: Hard Wood Bench
+887: Gum Wood Bench
+888: Iron Wood Bench
+889: Festoon Lights
+890: Mushroom Lamp
+891: Jackaroo Statue
+892: Bush Devil Statue
+893: Bread
+894: Fairy Bread
+895: Pastie
+896: Damper
+897: Sausage Roll
+898: Prime Roast
+899: Golden Jackaroo Statue
+900: Golden Bush Devil Statue
+901: Iron Cement Fence
+902: Copper Top Fence
+903: Umbrella
+904: Bulletin Board

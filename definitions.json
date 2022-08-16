@@ -1,0 +1,100 @@
+﻿{
+  "_id": "ObjectId(\"62f41036d6e0d3114cb6c12c\")",
+  "created_at": {
+    "$date": 1655954670230
+  },
+  "definitions": {
+    "InventoryBomb": {
+      "params": {
+        "radius": {
+          "type": "number",
+          "display": "Radius",
+          "description": "Square radius around the player that items can be thrown to",
+          "default": 4,
+          "min": 0,
+          "step": 1
+        },
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Inventory Bomb",
+      "description": "Back and better than ever!"
+    },
+    "SpawnItem": {
+      "params": {
+        "itemNo": {
+          "type": "number",
+          "display": "Item Id",
+          "description": "The Id (number) of the item to spawn",
+          "default": 1,
+          "required": true
+        },
+        "count": {
+          "type": "number",
+          "display": "Count",
+          "description": "How many of the item to spawn",
+          "default": 1,
+          "min": 0
+        },
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Spawn Item",
+      "description": "Spawn an item at the players current target location"
+    },
+    "ChatMessage": {
+      "params": {
+        "message": {
+          "type": "string",
+          "display": "Message",
+          "description": "The message to send the player",
+          "required": true
+        },
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Chat Message",
+      "description": "Send a chat message!"
+    },
+    "ChangeAppearence": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Change Appearence",
+      "description": "Change how your player looks!"
+    }
+  },
+  "type": "config",
+  "updated_at": {
+    "$date": 1655954670230
+  }
+}
