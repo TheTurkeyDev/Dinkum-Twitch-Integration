@@ -2,6 +2,7 @@
 using BepInEx.Logging;
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DinkumTwitchIntegration
@@ -63,8 +64,6 @@ namespace DinkumTwitchIntegration
                             int itemNo = (int)(values["itemNo"] ?? 0);
                             int count = (int)(values["count"] ?? 1);
                             var item = GetItemFromId(itemNo);
-                            if (item?.isATool ?? false)
-                                count = 10;
                             NetworkMapSharer.share.localChar.CmdDropItem(itemNo, count, playerPos, targetPos);
                             break;
                         case "ChatMessage":
@@ -79,7 +78,40 @@ namespace DinkumTwitchIntegration
                             equipItemToChar.CmdChangeHairId(RAND.Next(CharacterCreatorScript.create.allHairStyles.Length));
                             equipItemToChar.CmdChangeMouth(RAND.Next(CharacterCreatorScript.create.mouthTypes.Length));
                             equipItemToChar.CmdChangeEyes(RAND.Next(CharacterCreatorScript.create.allEyeTypes.Length), RAND.Next(CharacterCreatorScript.create.eyeColours.Length));
-                            equipItemToChar.CmdChangeShirtId(CharacterCreatorScript.create.allShirts[RAND.Next(CharacterCreatorScript.create.allShirts.Length)].getItemId());
+
+                            /*equipItemToChar.CmdChangeShirtId(RandomObjectGenerator.generate.getRandomShirtOrDressForShop(false).getItemId());
+                            equipItemToChar.CmdChangeHeadId(RandomObjectGenerator.generate.getRandomHat(false).getItemId());
+                            equipItemToChar.CmdChangePantsId(RandomObjectGenerator.generate.getRandomPants(false).getItemId());
+                            equipItemToChar.CmdChangeShoesId(RandomObjectGenerator.generate.getRandomShoes(false).getItemId());
+                            equipItemToChar.CmdChangeFaceId(RandomObjectGenerator.generate.getRandomFaceItem(false).getItemId());*/
+                            break;
+                        case "ShuffleInventory":
+                            var items = new List<ItemStack>();
+                            foreach (var s in Inventory.inv.invSlots)
+                                if (s.slotUnlocked)
+                                    items.Add(new ItemStack(s?.itemInSlot?.getItemId() ?? -1, s?.stack ?? 0));
+                            items.Shuffle();
+                            int currIndex = 0;
+
+                            foreach (var s in Inventory.inv.invSlots)
+                            {
+                                if (s.slotUnlocked)
+                                {
+                                    s.updateSlotContentsAndRefresh(items[currIndex].itemId, items[currIndex].stack);
+                                    currIndex++;
+                                }
+                            }
+
+                            Inventory.inv.equipNewSelectedSlot();
+                            break;
+                        case "SpawnEntity":
+                            //case "Test":
+                            int entId = (int)(values["entityId"] ?? 0);
+                            AnimalManager.manage.spawnFreeAnimal(entId, targetPos);
+                            break;
+                        case "Bomb":
+                            //Bomb is 277
+                            NetworkMapSharer.share.localChar.myInteract.CmdSpawnPlaceable(playerPos, 277);
                             break;
                     }
                 }
@@ -117,6 +149,24 @@ namespace DinkumTwitchIntegration
         private bool checkIfDropCanFitOnGround(InventorySlot slot, Vector3 position)
         {
             return WorldManager.manageWorld.checkIfDropCanFitOnGround(slot.itemNo, slot.stack, position, NetworkMapSharer.share.localChar.myInteract.insideHouseDetails);
+        }
+    }
+}
+
+static class MyExtensions
+{
+    private static System.Random rng = new System.Random();
+
+    public static void Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
         }
     }
 }

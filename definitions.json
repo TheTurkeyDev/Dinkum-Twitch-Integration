@@ -39,7 +39,7 @@
         "count": {
           "type": "number",
           "display": "Count",
-          "description": "How many of the item to spawn",
+          "description": "How many of the item to spawn. For tools, this is the durability",
           "default": 1,
           "min": 0
         },
@@ -91,6 +91,58 @@
       },
       "display": "Change Appearence",
       "description": "Change how your player looks!"
+    },
+    "ShuffleInventory": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Shuffle Inventory",
+      "description": "Shuffle the player's inventory!"
+    },
+    "SpawnEntity": {
+      "params": {
+        "itemNo": {
+          "type": "number",
+          "display": "Entity Id",
+          "description": "The Id (number) of the entity to spawn",
+          "default": 1,
+          "required": true
+        },
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Spawn Entity",
+      "description": "Spawn an entity at the players current target location"
+    },
+    "Bomb": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Bomb",
+      "description": "Spawn a bomb at the player's location!"
     }
   },
   "type": "config",

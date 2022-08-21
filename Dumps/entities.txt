@@ -1,0 +1,29 @@
+﻿=== Entities ===
+0: Jackaroo
+1: Fish
+2: Bug
+3: Croco
+4: Magpie
+5: Shark
+6: Diggo
+7: Scrub Turkey
+8: Cockatoo
+9: Chook
+10: Baby Chook
+11: Vombat
+12: Vombat Joey
+13: Mu
+14: Bush Devil
+15: Toad
+16: Wary Mu
+17: Pleep
+18: Jellyfish
+19: Pet Diggo
+20: Glowing Croco
+21: Wild Vombat
+22: Kidna
+23: Underwater Creature
+24: Alpha Jackaroo
+25: Alpha Croco
+26: Alpha Bush Devil
+27: Cave Bat
