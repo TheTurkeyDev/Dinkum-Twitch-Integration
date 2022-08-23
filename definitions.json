@@ -173,6 +173,67 @@
       },
       "display": "Repair Items",
       "description": "Repairs the items in the players inventory"
+    },
+    "Heal": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Heal",
+      "description": "Heals the player"
+    },
+    "Hurt": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        },
+        "amount": {
+          "type": "number",
+          "display": "Amount",
+          "description": "Amount of damage to deal to the player",
+          "default": 1,
+          "min": 0,
+          "required": true
+        }
+      },
+      "display": "Hurt",
+      "description": "Hurts the player"
+    },
+    "SetStamina": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        },
+        "value": {
+          "type": "number",
+          "display": "Value",
+          "description": "New value to set the players stamina to",
+          "default": 100,
+          "min": 0,
+          "required": true
+        }
+      },
+      "display": "Set Stamina",
+      "description": "Set the players stamina"
     }
   },
   "type": "config",

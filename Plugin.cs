@@ -110,6 +110,19 @@ namespace DinkumTwitchIntegration
                                 }
                             }
                             break;
+                        case "SetStamina":
+                            int newStamina = (int)(values["value"] ?? 0);
+                            int stamina = NetworkMapSharer.share.localChar.stamina;
+                            NetworkMapSharer.share.localChar.onChangeStamina(stamina, newStamina);
+                            break;
+                        case "HealPlayer":
+                            var damageable = NetworkMapSharer.share.localChar.GetComponent<Damageable>();
+                            damageable.CmdChangeHealthTo(damageable.maxHealth);
+                            break;
+                        case "HurtPlayer":
+                            int amount = (int)(values["amount"] ?? 0);
+                            NetworkMapSharer.share.localChar.CmdTakeDamage(amount);
+                            break;
                         case "Test":
                             NetworkMapSharer.share.localChar.myInteract.changeTile(4, 0);
                             break;
