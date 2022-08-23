@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using Mirror;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -62,8 +63,7 @@ namespace DinkumTwitchIntegration
                             break;*/
                         case "SpawnItem":
                             int itemNo = (int)(values["itemNo"] ?? 0);
-                            int count = (int)(values["count"] ?? 1);
-                            var item = GetItemFromId(itemNo);
+                            int count = (int)(values["count"] ?? 20000);
                             NetworkMapSharer.share.localChar.CmdDropItem(itemNo, count, playerPos, targetPos);
                             break;
                         case "ChatMessage":
@@ -86,23 +86,10 @@ namespace DinkumTwitchIntegration
                             equipItemToChar.CmdChangeFaceId(RandomObjectGenerator.generate.getRandomFaceItem(false).getItemId());*/
                             break;
                         case "ShuffleInventory":
-                            var items = new List<ItemStack>();
-                            foreach (var s in Inventory.inv.invSlots)
-                                if (s.slotUnlocked)
-                                    items.Add(new ItemStack(s?.itemInSlot?.getItemId() ?? -1, s?.stack ?? 0));
-                            items.Shuffle();
-                            int currIndex = 0;
-
-                            foreach (var s in Inventory.inv.invSlots)
-                            {
-                                if (s.slotUnlocked)
-                                {
-                                    s.updateSlotContentsAndRefresh(items[currIndex].itemId, items[currIndex].stack);
-                                    currIndex++;
-                                }
-                            }
-
-                            Inventory.inv.equipNewSelectedSlot();
+                            ShuffleInv(false);
+                            break;
+                        case "ShuffleHotbar":
+                            ShuffleInv(true);
                             break;
                         case "SpawnEntity":
                             //case "Test":
@@ -113,9 +100,47 @@ namespace DinkumTwitchIntegration
                             //Bomb is 277
                             NetworkMapSharer.share.localChar.myInteract.CmdSpawnPlaceable(playerPos, 277);
                             break;
+                        case "RepairItems":
+                            foreach (var s in Inventory.inv.invSlots)
+                            {
+                                if (s.itemInSlot != null && s.itemInSlot.isATool)
+                                {
+                                    s.stack += 2000;
+                                    s.refreshSlot();
+                                }
+                            }
+                            break;
+                        case "Test":
+                            NetworkMapSharer.share.localChar.myInteract.changeTile(4, 0);
+                            break;
                     }
                 }
             }
+        }
+
+        private void ShuffleInv(bool hotbarOnly = false)
+        {
+            var items = new List<ItemStack>();
+            for (int i = 0; i < Inventory.inv.invSlots.Length; i++)
+            {
+                var s = Inventory.inv.invSlots[i];
+                if (s.slotUnlocked && (i < 9 || !hotbarOnly))
+                    items.Add(new ItemStack(s?.itemInSlot?.getItemId() ?? -1, s?.stack ?? 0));
+            }
+            items.Shuffle();
+            int currIndex = 0;
+
+            for (int i = 0; i < Inventory.inv.invSlots.Length; i++)
+            {
+                var s = Inventory.inv.invSlots[i];
+                if (s.slotUnlocked && (i < 9 || !hotbarOnly))
+                {
+                    s.updateSlotContentsAndRefresh(items[currIndex].itemId, items[currIndex].stack);
+                    currIndex++;
+                }
+            }
+
+            Inventory.inv.equipNewSelectedSlot();
         }
 
         private InventoryItem GetItemFromId(int id)

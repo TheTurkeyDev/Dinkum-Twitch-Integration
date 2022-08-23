@@ -1,0 +1,396 @@
+﻿0: GumTree
+1: Grass
+2: SmallRock
+3: GumTreeStump
+4: Fern
+5: Spinifex
+6: PalmTree
+7: BigRock
+8: JohnsShop
+9: GardenLight
+10: CoralGreen
+11: CoralRed
+12: Coral
+13: DesertSpinifex
+14: PalmWoodFence
+15: BridgeTile
+16: WindMill
+17: LimeTree
+18: WaterTile
+19: CraftersBuilding
+20: BrickSteps
+21: StoneGrinder
+22: BBQ
+23: Crate
+24: SugarCane
+25: CampFire
+26: Wooden_Couch
+27: PlayerHouse
+28: WoodenTorch
+29: MineWalls
+30: BuriedItem
+31: Wooden Double Bed
+32: LoungeChair
+33: CoffeeTable
+34: DarkWoodTable
+35: PlantShop
+36: PostOffice
+37: RoundTable
+38: BlackWoodTree
+39: BlackTreeStump
+40: PowerLine
+41: Purple_Seat
+42: DarkWoodCabinet
+43: AirPort
+44: WelcomeSign
+45: ClothingShop
+46: Wattle
+47: FallenLog
+48: StreetLamp
+49: Cabbage
+50: Furnace
+51: Carrot
+52: CornPlant
+53: Dark Wooden SingleBed
+54: MineEntrance
+55: MineExit
+56: Mushroom
+57: OreDeposit_Copper
+58: WoodenChair
+59: WoodenKitchenTable
+60: WoodenBedSideTable
+61: WoodenChestOfDraws
+62: WoodenCabinet
+63: WoodenSingleBed
+64: Wooden Seat
+65: Purple Couch
+66: StylishArmChair
+67: StylishCouch
+68: WhiteChair
+69: WhiteCoffeeTable
+70: WhiteCouch
+71: WhiteDinnerTable
+72: WhiteLongCoffeeTable
+73: StylishBed
+74: StylishBedSideTable
+75: StylishChestOfDraws
+76: StylishTallDresser
+77: FurnitureShop
+78: Dark Wooden Seat
+79: Dark Wooden_Couch
+80: Dark_WoodenBedSideTable 1
+81: KitchenBench
+82: KitchenOven
+83: KitchenSink
+84: White_Ottoman
+85: WhiteArmChair
+86: WhiteBed
+87: WhiteBedSideTable
+88: WhiteChestOfDrawers
+89: Purple Vase
+90: VaseFern
+91: VaseWattle
+92: DaintyBed
+93: DaintyBedSideTable
+94: DaintyChair
+95: DaintyChestOfDraws
+96: DaintyCoffeeTable
+97: DaintyLamp
+98: DaintyOddoman
+99: DaintySofa
+100: DaintyTable
+101: StylishChair
+102: StylishCoffeeTable
+103: StylishLamp
+104: RegalArmChairChair
+105: RegalBed
+106: RegalBedSideTable
+107: RegalChair
+108: RegalCoffeeTable
+109: RegalDrawers
+110: RegalLamp
+111: RegalSofa
+112: Scallop
+113: Nautilish_Shell
+114: Syrinx_Shell
+115: PalmTreeStump
+116: PricklyPear
+117: CrabPot
+118: BeeHouse
+119: OreDeposit_Iron
+120: OreDeposit_Opal
+121: Lillpad
+122: AntHill
+123: BrickFence
+124: CementSteps
+125: WaterTank
+126: Hedge
+127: FencePostLight
+128: WoodenGate
+129: BridgeTileFence
+130: Mangrove
+131: MangroveRoots
+132: Sprinkler
+133: RiverReed
+134: BananaTree
+135: TropicalBush
+136: PineTree
+137: ColdGrass
+138: PineTreeStump
+139: AppleTree
+140: GrassTree
+141: TrapTileObject
+142: SeaWeed
+143: TableSaw
+144: CoralRock
+145: Clam
+146: PostOfficeInProgress
+147: CraftersHouseInProgress
+148: ShopInProgress
+149: FurnitureShopInProgress
+150: ClothesShopInProgress
+151: PlantShopInProgress
+152: PalmWoodSteps
+153: GumTreeGrowing
+154: PineTreeGrowing
+155: PalmTreeGrowing
+156: SleepingBag
+157: Kale
+158: PotatoPlant
+159: WheatPlant
+160: WaterMelonStem
+161: WaterMelonFruit
+162: PumpkinOffShoot
+163: PumpkinPlant
+164: Onion_Plant
+165: MarketPlace
+166: ChickenCoop
+167: AnimalShop
+168: AnimalShopInProgress
+169: Animal Feeder
+170: AnimalStall
+171: LargeFeeder
+172: Flowerbed
+173: Arch
+174: Fountain
+175: CookingTable
+176: PlayerHouse Stage 2
+177: FlowerPot_DesertRose
+178: FruitBowl
+179: Alarm_Clock
+180: RegalClock
+181: Lava_Lamp
+182: Roo_Plush
+183: Museum
+184: MuseumInProgress
+185: DungeonWall
+186: DungeonGate
+187: UndergroundSeaWeed
+188: Barrel
+189: OreDeposit_Quartz
+190: Quarry
+191: BulletinBoard
+192: Keg
+193: BottleTree
+194: BottleTreeStump
+195: Thunder_EggTileObject
+196: Animal Collection Point
+197: TownHallInProgress
+198: Town Hall
+199: PlatysheepDen
+200: FutureCrate
+201: DesertRose
+202: BillyButton
+203: Common Heath
+204: Royal Bluebell
+205: Desert Pea
+206: GachaMachine
+207: BasicBench
+208: Scarecrow
+209: FlowerbedBrick
+210: RecyclingBox
+211: OreDeposit_Tin
+212: TallRock
+213: CrudeFurnace
+214: Crude Fence
+215: HarbourHouse
+216: PlayerTent
+217: Flagpole
+218: Base Tent
+219: PicketFence
+220: PicketGate
+221: DogKennel
+222: Bank
+223: BankInProgress
+224: CraftingTable
+225: Tiki Torch
+226: DonationBox
+227: WeatherStation
+228: NPCHouse1_InProgress
+229: NPCHouse2_InProgress
+230: NPCHouse3_InProgress
+231: NPCHouse4_InProgress
+232: NPCHouse1
+233: NPCHouse2
+234: NPCHouse3
+235: NPCHouse4
+236: Eastern_Chair
+237: Eastern Seat
+238: Eastern Double Bed
+239: Eastern_BedSideTable
+240: Eastern_BookShelf
+241: Eastern_Cabinet
+242: Eastern_CoffeeTable
+243: Eastern_Couch
+244: Eastern_DiningTable
+245: Eastern_Lamp
+246: StackOfBooks
+247: WombieBank
+248: Billy Button Pot
+249: Royal Bluebell Pot
+250: Rattan_Chair
+251: Rattan_Seat
+252: Rattan Bed
+253: Rattan_BedSideTable
+254: Rattan BookShelf
+255: Rattan_Cabinet
+256: Rattan_Couch
+257: Rattan_CoffeeTable
+258: Rattan_DiningTable
+259: Rattan_Lamp
+260: Nordic Chair
+261: Nordic_Seat
+262: Nordic_Bed
+263: Nordic_BedSideTable
+264: Nordic BookShelf
+265: Nordic_Cabinet
+266: Nordic_Couch
+267: Nordic_CoffeeTable
+268: Nordic_DiningTable
+269: Nordic_Lamp
+270: Pink Chair
+271: Pink_Seat
+272: Pink_Bed
+273: Pink_BedSideTable
+274: Pink BookShelf
+275: Pink_Cabinet
+276: Pink_Couch
+277: Pink_CoffeeTable
+278: Pink_DiningTable
+279: Pink_Lamp
+280: DeadSmallPlant
+281: DeadTallPlant
+282: WoodenBridge
+283: CassowaryNest
+284: Bones
+285: OldBarrel
+286: OldSign
+287: OldReflector
+288: TeleTowerBroken_North
+289: TeleTowerBroken_East
+290: TeleTowerBroken_South
+291: TeleTowerBroken_West
+292: TeleTower
+293: SpinningWheel
+294: CheeseMaker
+295: FutureCrateOpen
+296: GrowingFern
+297: Growing Bush
+298: MoveBaseTent
+299: MarketPlaceMove
+300: MineInProgress
+301: WoodenSign
+302: Silo
+303: Black Wood Tree Growing
+304: MangroveTreeGrowing
+305: CementFence
+306: StickTrapTile
+307: BottleBrush
+308: CompostBin
+309: ShirtDisplay
+310: HatDisplay
+311: PantsDisplay
+312: ShoeDisplay
+313: FishTank
+314: LargeFishTank
+315: TelePad
+316: HouseMoveSpot
+317: WheelieBin
+318: AdvancedSprinkler
+319: FlowerPot
+320: HardWoodBridge
+321: GumWoodBridge
+322: BrickBridge
+323: GumWoodFence
+324: HardWoodFence
+325: TinFence
+326: HardWoodGate
+327: GumWoodGate
+328: TinGate
+329: BrickWell
+330: QuandongTree
+331: GreenChairFurniture
+332: GreenSeatFurniture
+333: GreenBedFurniture
+334: Green_BedSideTableFurniture
+335: GreenBookShelfFurniture
+336: Green_CabinetFurniture
+337: Green_Couch
+338: Green_CoffeeTableFurniture
+339: Green_DiningTableFurniture
+340: Green_LampFurniture
+341: MoveTownHall
+342: StorageBarrel
+343: BugTank
+344: MineBorder
+345: CoconutTree
+346: CoconutTreeGrowing
+347: Buccinidae Shell
+348: Cassidae Shell
+349: SandDollar Shell
+350: Tonnidae Shell
+351: Croc Berley Box
+352: Devil Berley Box
+353: Shark Berley Box
+354: JimmyBoatInterior
+355: BoomBox
+356: OreDeposit_Ruby
+357: TomatoPlant
+358: Bean Plant
+359: Telepad In Progress
+360: Copper Street Lamp
+361: RepairTable
+362: ChargingStation
+363: BrokenWoodFence
+364: MineFenceLight
+365: Mill
+366: Worm Farm
+367: CarRelic
+368: Nordic Chair Warm Variant
+369: Nordic_Seat Warm Variant
+370: Nordic_Bed Warm Variant
+371: Nordic_BedSideTable Warm Variant
+372: Nordic BookShelf Warm Variant
+373: Nordic_Cabinet Warm Variant
+374: Nordic_Couch Warm Variant
+375: Nordic_CoffeeTable Warm Variant
+376: Nordic_DiningTable Warm Variant
+377: Nordic_Lamp Warm Variant
+378: DarkWoodenChair
+379: TeaPot
+380: Small Pot
+381: Rattan Basket
+382: PalmWoodBench
+383: HardWoodBench
+384: GumWoodBench
+385: IronBench
+386: FestoonLight
+387: BigGumTree
+388: MushroomLamp
+389: JackarooStatue
+390: BunyipStatue
+391: BigGumTreeStump
+392: GoldJackarooStatue
+393: GoldBunyipStatue
+394: IronCementFence
+395: CopperTopFence

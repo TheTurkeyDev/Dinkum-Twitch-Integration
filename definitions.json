@@ -107,6 +107,21 @@
       "display": "Shuffle Inventory",
       "description": "Shuffle the player's inventory!"
     },
+    "ShuffleHotbar": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Shuffle Hotbar",
+      "description": "Shuffle the player's hotbar!"
+    },
     "SpawnEntity": {
       "params": {
         "itemNo": {
@@ -143,6 +158,21 @@
       },
       "display": "Bomb",
       "description": "Spawn a bomb at the player's location!"
+    },
+    "RepairItems": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Repair Items",
+      "description": "Repairs the items in the players inventory"
     }
   },
   "type": "config",
