@@ -94,7 +94,8 @@ namespace DinkumTwitchIntegration
                         case "SpawnEntity":
                             //case "Test":
                             int entId = (int)(values["entityId"] ?? 0);
-                            AnimalManager.manage.spawnFreeAnimal(entId, targetPos);
+                            Vector3 position = NetworkMapSharer.share.localChar.transform.position;
+                            NetworkNavMesh.nav.SpawnAnAnimalOnTile(entId, (int)(position.x / 2), (int)(position.z / 2));
                             break;
                         case "Bomb":
                             //Bomb is 277

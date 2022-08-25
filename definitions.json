@@ -124,7 +124,7 @@
     },
     "SpawnEntity": {
       "params": {
-        "itemNo": {
+        "entityId": {
           "type": "number",
           "display": "Entity Id",
           "description": "The Id (number) of the entity to spawn",
