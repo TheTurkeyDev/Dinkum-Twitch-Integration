@@ -131,6 +131,12 @@
           "default": 1,
           "required": true
         },
+        "health": {
+          "type": "number",
+          "display": "Health",
+          "description": "The amount of health to spawn the entity with",
+          "default": 0
+        },
         "delay": {
           "type": "number",
           "display": "Delay",
@@ -234,6 +240,21 @@
       },
       "display": "Set Stamina",
       "description": "Set the players stamina"
+    },
+    "Mail": {
+      "params": {
+        "delay": {
+          "type": "number",
+          "display": "Delay",
+          "description": "Delay length before this action triggers",
+          "default": 0,
+          "min": 0,
+          "step": 100,
+          "measurement": "ms"
+        }
+      },
+      "display": "Mail",
+      "description": "Send some mail with the given message!"
     }
   },
   "type": "config",

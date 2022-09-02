@@ -28,6 +28,9 @@
     <Reference Include="Mirror">
       <HintPath>..\..\..\Games\Steam\steamapps\common\Dinkum\Dinkum_Data\Managed\Mirror.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Games\Steam\steamapps\common\Dinkum\Dinkum_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

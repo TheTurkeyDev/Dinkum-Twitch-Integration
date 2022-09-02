@@ -1,5 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using DinkumTwitchIntegration;
+using HarmonyLib;
 using Mirror;
 using System;
 using System.Collections.Concurrent;
@@ -14,10 +16,14 @@ namespace DinkumTwitchIntegration
         private static readonly System.Random RAND = new System.Random();
         public static ManualLogSource logger;
         public static ConcurrentQueue<RewardData> rewardsQueue = new ConcurrentQueue<RewardData>();
+        public static Dictionary<int, CustomLetterTemplate> letters = new Dictionary<int, CustomLetterTemplate>();
+        private static int nextId = -200;
 
         private void Awake()
         {
             // Plugin startup logic
+            var harmony = new Harmony("dev.theturkey.dinkumintegration");
+            harmony.PatchAll();
             logger = Logger;
             Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
             IntegationSocket.Start("core-keeper", 23491);
@@ -35,6 +41,7 @@ namespace DinkumTwitchIntegration
                 else
                 {
                     string userName = (string)reward.data["metadata"]["user"];
+                    string message = (string)reward.data["metadata"]["message"];
                     var values = reward.data["values"];
                     Vector3 targetPos = NetworkMapSharer.share.localChar.myInteract.tileHighlighter.transform.position;
                     targetPos.y = ((Component)(object)NetworkMapSharer.share.localChar).transform.position.y;
@@ -68,7 +75,10 @@ namespace DinkumTwitchIntegration
                             break;
                         case "ChatMessage":
                             string chatMsg = (string)(values["message"] ?? "");
-                            NetworkMapSharer.share.localChar.CmdSendChatMessage(chatMsg);
+                            ChatBox.chat.chatOpen = true;
+                            ChatBox.chat.chatBox.text = chatMsg;
+                            ChatBox.chat.sendEmote(RAND.Next(8));
+                            //NetworkMapSharer.share.localChar.CmdSendChatMessage(chatMsg);
                             break;
                         case "ChangeAppearence":
                             var equipItemToChar = NetworkMapSharer.share.localChar.myEquip;
@@ -92,10 +102,10 @@ namespace DinkumTwitchIntegration
                             ShuffleInv(true);
                             break;
                         case "SpawnEntity":
-                            //case "Test":
                             int entId = (int)(values["entityId"] ?? 0);
+                            int health = (int)(values["health"] ?? 1);
                             Vector3 position = NetworkMapSharer.share.localChar.transform.position;
-                            NetworkNavMesh.nav.SpawnAnAnimalOnTile(entId, (int)(position.x / 2), (int)(position.z / 2));
+                            NetworkNavMesh.nav.SpawnAnAnimalOnTile(entId, (int)(position.x / 2), (int)(position.z / 2), null, health);
                             break;
                         case "Bomb":
                             //Bomb is 277
@@ -113,19 +123,26 @@ namespace DinkumTwitchIntegration
                             break;
                         case "SetStamina":
                             int newStamina = (int)(values["value"] ?? 0);
-                            int stamina = NetworkMapSharer.share.localChar.stamina;
-                            NetworkMapSharer.share.localChar.onChangeStamina(stamina, newStamina);
+                            NetworkMapSharer.share.localChar.CmdSetNewStamina(newStamina);
                             break;
                         case "HealPlayer":
                             var damageable = NetworkMapSharer.share.localChar.GetComponent<Damageable>();
-                            damageable.CmdChangeHealthTo(damageable.maxHealth);
+                            damageable.CmdChangeHealthTo(100);
                             break;
                         case "HurtPlayer":
                             int amount = (int)(values["amount"] ?? 0);
                             NetworkMapSharer.share.localChar.CmdTakeDamage(amount);
                             break;
+                        case "Mail":
+                            letters.Add(nextId, new CustomLetterTemplate("This is a test!"));
+                            MailManager.manage.mailInBox.Add(new Letter(-5, Letter.LetterType.randomLetter)
+                            {
+                                letterTemplateNo = nextId
+                            });
+                            nextId -= 1;
+                            break;
                         case "Test":
-                            NetworkMapSharer.share.localChar.myInteract.changeTile(4, 0);
+                            //NetworkMapSharer.share.localChar.myInteract.changeTile(4, 0);
                             break;
                     }
                 }
@@ -207,5 +224,19 @@ static class MyExtensions
             list[k] = list[n];
             list[n] = value;
         }
+    }
+}
+
+[HarmonyPatch(typeof(Letter), nameof(Letter.getMyTemplate))]
+class Patch
+{
+    static bool Prefix(ref LetterTemplate __result, Letter __instance)
+    {
+        if (__instance.myType == Letter.LetterType.randomLetter && __instance.letterTemplateNo <= -200)
+        {
+            __result = Plugin.letters[__instance.letterTemplateNo];
+            return false;
+        }
+        return true;
     }
 }
