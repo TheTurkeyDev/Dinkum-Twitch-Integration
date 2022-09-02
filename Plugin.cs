@@ -134,7 +134,7 @@ namespace DinkumTwitchIntegration
                             NetworkMapSharer.share.localChar.CmdTakeDamage(amount);
                             break;
                         case "Mail":
-                            letters.Add(nextId, new CustomLetterTemplate("This is a test!"));
+                            letters.Add(nextId, new CustomLetterTemplate(message));
                             MailManager.manage.mailInBox.Add(new Letter(-5, Letter.LetterType.randomLetter)
                             {
                                 letterTemplateNo = nextId
